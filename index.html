@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/style.css" />
+        <title>SISTEMA T.I</title>
+    </head>
+    <body>
+        <section class="main_info">
+            <div class="left_info">
+                <h1 class="left_title">PENDENTES</h1>
+
+                <div class="table_database"></div>
+                <div class="table_solucoes" style="display: none"></div>
+                <a>
+                    <button id="concluidasButton" class="left_button">
+                        CONCLUIDAS
+                    </button>
+                </a>
+            </div>
+            <div class="right_info">
+                <h1 class="right_title">ENTRADA</h1>
+                <div class="box">
+                    <div id="inputContainer">
+                        <div class="box_info">
+                            <input
+                                type="text"
+                                required=""
+                                value=""
+                                id="codigoFuncionario"
+                                autocomplete="off"
+                            />
+                            <label for="codigoFuncionario"
+                                >NOME DO FUNCIONÁRIO</label
+                            >
+                        </div>
+
+                        <div class="box_info">
+                            <input
+                                type="text"
+                                required=""
+                                value=""
+                                id="numeroContato"
+                                autocomplete="off"
+                            />
+                            <label for="numeroContato">NÚMERO DE CONTATO</label>
+                        </div>
+
+                        <div class="box_info">
+                            <input
+                                type="text"
+                                required=""
+                                value=""
+                                id="departamento"
+                                autocomplete="off"
+                            />
+                            <label for="departamento">DEPARTAMENTO</label>
+                        </div>
+
+                        <div class="box_info_select">
+                            <label for="equipamento">EQUIPAMENTO</label>
+                            <select id="equipamentoInput" name="equipamento">
+                                <option value="computador">Computador</option>
+                                <option value="periférico">Periférico</option>
+                                <option value="notebook">Notebook</option>
+                                <option value="monitor">Monitor</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="box_info">
+                            <input
+                                type="text"
+                                required=""
+                                value=""
+                                id="tecnicoResponsavelEntrada"
+                                autocomplete="off"
+                            />
+                            <label for="tecnicoResponsavelEntrada"
+                                >TÉCNICO RESPONSÁVEL</label
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="button_container">
+                    <a href="javascript:void(0)" id="solucaoButton">
+                        <button class="right_button">SOLUÇÃO</button>
+                    </a>
+                    <a href="javascript:void(0)" id="cadastrarButton">
+                        <button class="right_button">CADASTRAR</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <script src="./assets/script.js"></script>
+    </body>
+</html>
